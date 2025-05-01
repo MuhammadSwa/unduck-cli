@@ -1,13 +1,31 @@
-# Unduck
+# DuckDuckGo Bang CLI Utility (A Fork from [t3dotgg/unduck](github.com/t3dotgg/unduck))
 
-DuckDuckGo's bang redirects are too slow. Add the following URL as a custom search engine to your browser. Enables all of DuckDuckGo's bangs to work, but much faster.
+A simple command-line utility written in TypeScript to generate DuckDuckGo Bang redirect URLs, designed for easy integration with tools like Rofi on Linux.
 
+## Features
+
+* Generate DuckDuckGo URLs from bang commands (e.g., `!g my search`).
+* Outputs the resulting URL to standard output.
+* Convenient for scripting and integrating with launchers like Rofi.
+
+
+## Installation
+
+1.  Clone this repository:
+    ```bash
+    git clone <repository-url> # Replace <repository-url> with the actual URL
+    cd <repository-directory>
+    ```
+2.  Install dependencies:
+    ```bash
+    npm install
+    ```
+
+## Building
+Compile the TypeScript files into a single, executable JavaScript file using `ncc`:
+```bash
+npm run build
 ```
-https://unduck.link?q=%s
-```
 
-## How is it that much faster?
-
-DuckDuckGo does their redirects server side. Their DNS is...not always great. Result is that it often takes ages.
-
-I solved this by doing all of the work client side. Once you've went to https://unduck.link once, the JS is all cache'd and will never need to be downloaded again. Your device does the redirects, not me.
+## Usage Example
+- I use unduck.sh for interactive use with Rofi and opening in default browser. I have a keybinding for it.

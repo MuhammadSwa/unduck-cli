@@ -4,15 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview"
+    "build": "npx ncc build app.ts -o dist"
   },
   "devDependencies": {
-    "typescript": "~5.7.2",
-    "vite": "^6.1.0"
-  },
-  "dependencies": {
-    "vite-plugin-pwa": "^0.21.1"
+    "@types/node": "^22.15.3",
+    "@vercel/ncc": "^0.38.3",
+    "typescript": "~5.7.2"
   }
 }
