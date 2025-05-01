@@ -1,4 +1,4 @@
-# DuckDuckGo Bang CLI Utility (A Fork from [t3dotgg/unduck](github.com/t3dotgg/unduck))
+# DuckDuckGo Bang CLI Utility (A Fork from [t3dotgg/unduck](https://github.com/t3dotgg/unduck))
 
 A simple command-line utility written in TypeScript to generate DuckDuckGo Bang redirect URLs, designed for easy integration with tools like Rofi on Linux.
 
