@@ -25,7 +25,7 @@ export const bangs = [
     r: 2971,
     s: "Brave Search",
     sc: "Google",
-    t: "brave",
+    t: "br",
     u: "https://search.brave.com/search?q={{{s}}}",
   },
   {
@@ -81,6 +81,15 @@ export const bangs = [
     sc: "Search",
     t: "w",
     u: "https://en.wikipedia.org/wiki/Special:Search?search={{{s}}}",
+  },
+  {
+    c: "Tech",
+    d: "aur.archlinux.org",
+    r: 3999,
+    s: "Arch User Repository",
+    sc: "Sysadmin (Arch)",
+    t: "aur",
+    u: "https://aur.archlinux.org/packages/?K={{{s}}}",
   },
   {
     c: "Tech",
@@ -6632,15 +6641,6 @@ export const bangs = [
   },
   {
     c: "Tech",
-    d: "aur.archlinux.org",
-    r: 12,
-    s: "ArchLinux User Repository",
-    sc: "Languages (other)",
-    t: "archaur",
-    u: "https://aur.archlinux.org/packages.php?O=0&K={{{s}}}&do_Search=Go",
-  },
-  {
-    c: "Tech",
     d: "bugs.archlinux.org",
     r: 0,
     s: "ArchLinux Bugtracker",
@@ -8285,15 +8285,6 @@ export const bangs = [
     sc: "Sysadmin (Arch)",
     t: "aur4",
     u: "https://aur4.archlinux.org/packages/?K={{{s}}}",
-  },
-  {
-    c: "Tech",
-    d: "aur.archlinux.org",
-    r: 3999,
-    s: "Arch User Repository",
-    sc: "Sysadmin (Arch)",
-    t: "aur",
-    u: "https://aur.archlinux.org/packages/?K={{{s}}}",
   },
   {
     c: "Tech",
@@ -13531,7 +13522,7 @@ export const bangs = [
     r: 95,
     s: "Baseball-Reference",
     sc: "Reference",
-    t: "br",
+    t: "brf",
     u: "http://www.baseball-reference.com/pl/player_search.cgi?search={{{s}}}",
   },
   {

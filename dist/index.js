@@ -75,7 +75,7 @@ const bangs = [
         r: 2971,
         s: "Brave Search",
         sc: "Google",
-        t: "brave",
+        t: "br",
         u: "https://search.brave.com/search?q={{{s}}}",
     },
     {
@@ -13581,7 +13581,7 @@ const bangs = [
         r: 95,
         s: "Baseball-Reference",
         sc: "Reference",
-        t: "br",
+        t: "brf",
         u: "http://www.baseball-reference.com/pl/player_search.cgi?search={{{s}}}",
     },
     {
