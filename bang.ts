@@ -1,6 +1,29 @@
 // This file was (mostly) ripped from https://duckduckgo.com/bang.js
 
-export const bangs = [
+
+export interface Bang {
+ //  The category of the service or website.
+  c: string;
+ // The domain of the website.
+  d: string;
+
+ // A numeric rank or popularity score for the bang.
+  r: number;
+
+ // The full name of the website or service.
+  s: string;
+
+ // A sub-category or source for the service.
+  sc: string;
+  
+ // The alias or trigger keyword used for the bang.
+  t: string;
+
+ // The URL template for the search. The placeholder "{{{s}}}" will be replaced with the user's search query.
+  u: string;
+}
+
+export const bangs: Bang[] = [
   {
     c: "Shopping",
     d: "www.amazon.com",
@@ -38,15 +61,6 @@ export const bangs = [
     u: "https://www.google.com/search?q={{{s}}}",
   },
   {
-    c: "Multimedia",
-    d: "www.youtube.com",
-    r: 463021,
-    s: "YouTube",
-    sc: "Video",
-    t: "yt",
-    u: "https://www.youtube.com/results?search_query={{{s}}}",
-  },
-  {
     c: "Online Services",
     d: "google.com",
     r: 52329,
@@ -54,6 +68,15 @@ export const bangs = [
     sc: "Google",
     t: "gi",
     u: "https://google.com/search?tbm=isch&q={{{s}}}&tbs=imgo:1",
+  },
+  {
+    c: "Multimedia",
+    d: "www.youtube.com",
+    r: 463021,
+    s: "YouTube",
+    sc: "Video",
+    t: "yt",
+    u: "https://www.youtube.com/results?search_query={{{s}}}",
   },
   {
     c: "Tech",

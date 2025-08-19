@@ -3,12 +3,5 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "scripts": {
-    "build": "npx ncc build app.ts -o dist"
-  },
-  "devDependencies": {
-    "@types/node": "^22.15.3",
-    "@vercel/ncc": "^0.38.3",
-    "typescript": "~5.7.2"
-  }
+  "scripts": {}
 }
